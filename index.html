@@ -100,21 +100,21 @@
             if (!target || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
             const commands = [
-                'java --version',
-                'python --version',
-                'groovy --version',
-                'bash --version',
-                'mvn test',
-                'psql --version',
-                'docker compose up --detach',
-                'kubectl get pods --all-namespaces',
+                'mvn -q test -DskipITs=false',
+                'python -m pytest -q --cov',
+                'groovy deploy.groovy --environment prod',
+                './scripts/release.sh --dry-run',
+                'cmake --build build --parallel',
+                "psql -c 'EXPLAIN ANALYZE SELECT ...'",
+                'docker build -t platform-api .',
+                'kubectl rollout status deployment/api',
                 'helm upgrade --install platform ./chart',
                 'terraform apply',
-                'az account show',
-                'oc get projects',
-                'gh workflow run deploy.yml',
-                'grafana-cli plugins ls',
-                'promtool check config prometheus.yml'
+                'az keyvault secret show --vault-name core',
+                'oc rollout status deployment/api',
+                'gh workflow run deploy.yml --ref main',
+                'grafana-cli plugins install grafana-piechart',
+                'promtool check rules alerts.yml'
             ];
             let command = 0;
             let characters = 0;
