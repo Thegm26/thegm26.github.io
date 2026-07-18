@@ -25,8 +25,9 @@
         <div class="terminal-body">
             <section class="hero" aria-labelledby="name">
                 <p class="eyebrow">[ SOFTWARE ENGINEER / BACKEND + PLATFORM ]</p>
-                <h1 id="name">George Michalakis<span class="cursor" aria-hidden="true">_</span></h1>
+                <h1 id="name">George Michalakis<span class="name-cursor" aria-hidden="true">_</span></h1>
                 <p class="lead">I build and operate dependable software systems: backend services, cloud platforms, integration workflows, and delivery automation.</p>
+                <p class="command-demo" aria-label="Examples of tools George uses"><span class="demo-prompt" aria-hidden="true">$</span> <span id="typing-command">java --version</span><span class="demo-cursor" aria-hidden="true">▍</span></p>
                 <div class="hero-meta">
                     <div class="base-focus">
                         <span>base: Nice, France 🇫🇷</span>
@@ -93,5 +94,48 @@
             </footer>
         </div>
     </main>
+    <script>
+        (() => {
+            const target = document.getElementById('typing-command');
+            if (!target || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            const commands = [
+                'java --version',
+                'kubectl get pods --all-namespaces',
+                'terraform apply',
+                'mvn test'
+            ];
+            let command = 0;
+            let characters = 0;
+            let deleting = false;
+
+            const update = () => {
+                const current = commands[command];
+                target.textContent = current.slice(0, characters);
+
+                if (!deleting && characters < current.length) {
+                    characters += 1;
+                    window.setTimeout(update, 58);
+                    return;
+                }
+                if (!deleting) {
+                    deleting = true;
+                    window.setTimeout(update, 1200);
+                    return;
+                }
+                if (characters > 0) {
+                    characters -= 1;
+                    window.setTimeout(update, 28);
+                    return;
+                }
+                deleting = false;
+                command = (command + 1) % commands.length;
+                window.setTimeout(update, 260);
+            };
+
+            target.textContent = '';
+            update();
+        })();
+    </script>
 </body>
 </html>

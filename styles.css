@@ -75,8 +75,11 @@ body::before {
 .eyebrow, .label { margin: 0; color: var(--green); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; }
 h1, h2, p { margin-top: 0; }
 h1 { margin-bottom: 13px; color: #efffe9; font-size: clamp(2.25rem, 7vw, 5.8rem); line-height: 0.98; letter-spacing: -0.07em; }
-.cursor { color: var(--green); animation: blink 1.05s step-end infinite; }
+.name-cursor { color: var(--green); font-size: 0.4em; vertical-align: 0.18em; animation: blink 1.05s step-end infinite; }
 .lead { max-width: 830px; margin-bottom: 19px; color: #c7d9c4; font-size: clamp(1.03rem, 2.1vw, 1.35rem); }
+.command-demo { min-height: 1.7em; margin: 0 0 15px; color: var(--ink); font-size: 0.93rem; font-weight: 700; }
+.demo-prompt, .demo-cursor { color: var(--green); }
+.demo-cursor { display: inline-block; margin-left: 2px; font-size: 0.75em; animation: blink 0.8s step-end infinite; }
 .hero-meta { display: flex; justify-content: space-between; gap: 18px 20px; color: var(--muted); font-size: 0.8rem; }
 .base-focus { display: grid; gap: 3px; }
 .hero-meta span::before { content: "> "; color: var(--green-dark); }
@@ -124,5 +127,5 @@ footer { padding: 10px 0 0; color: var(--muted); font-size: 0.86rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .cursor { animation: none; }
+    .name-cursor, .demo-cursor { animation: none; }
 }
