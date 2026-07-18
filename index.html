@@ -16,37 +16,40 @@
     <main class="terminal" aria-label="George Michalakis portfolio">
         <header class="terminal-bar">
             <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span>george@engineering: ~/portfolio</span>
+            <span class="terminal-title">george@engineering: ~/portfolio</span>
             <nav class="top-links" aria-label="Contact links">
-                <a href="mailto:georgios.michalakis26@gmail.com" aria-label="Email George" title="Email George">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"></rect><path d="m3 6 9 7 9-7"></path></svg>
-                </a>
-                <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer" aria-label="George on GitHub" title="George on GitHub">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.57 22c.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.34-3.84-1.34-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.13 1.17a10.8 10.8 0 0 1 5.7 0c2.17-1.48 3.13-1.17 3.13-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.38-2.66 5.34-5.2 5.63.41.35.77 1.03.77 2.08v3.08c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"></path></svg>
-                </a>
+                <a href="mailto:georgios.michalakis26@gmail.com">Email ↗</a>
+                <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">GitHub ↗</a>
+                <a href="assets/GeorgeMichalakisCV.pdf" target="_blank" rel="noreferrer">Open CV ↗</a>
             </nav>
         </header>
 
         <div class="terminal-body">
-            <section class="hero" aria-labelledby="name">
-                <p class="eyebrow">[ BACKEND / PLATFORM / CLOUD ENGINEER ]</p>
-                <h1 id="name">George Michalakis</h1>
-                <p class="lead">I build and operate enterprise software across backend services, cloud platforms, integration workflows, and production automation.</p>
-                <p class="command-demo" aria-label="Examples of tools George uses"><span class="demo-prompt" aria-hidden="true">$</span> <span id="typing-command">mvn -q test -DskipITs=false</span><span class="demo-cursor" aria-hidden="true">▍</span></p>
-                <div class="hero-meta">
+            <div class="overview-grid">
+                <section class="hero" aria-labelledby="name">
+                    <p class="eyebrow">[ BACKEND / PLATFORM / CLOUD ENGINEER ]</p>
+                    <h1 id="name">George Michalakis</h1>
+                    <p class="lead">I build and operate enterprise software across backend services, cloud platforms, integration workflows, and production automation.</p>
+                    <p class="command-demo" aria-label="Examples of tools George uses"><span class="demo-prompt" aria-hidden="true">$</span> <span id="typing-command">mvn -q test -DskipITs=false</span><span class="demo-cursor" aria-hidden="true">▍</span></p>
                     <div class="base-focus">
                         <span>base: Nice, France 🇫🇷</span>
                         <span>focus: backend systems · platform engineering · reliability</span>
                     </div>
-                    <div class="hero-contact">
-                        <nav aria-label="Contact options">
-                            <a href="mailto:georgios.michalakis26@gmail.com">Email ↗</a>
-                            <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">GitHub ↗</a>
-                            <a href="assets/GeorgeMichalakisCV.pdf" target="_blank" rel="noreferrer">Open CV ↗</a>
-                        </nav>
+                </section>
+
+                <section class="stack-sidebar" id="stack">
+                    <div class="panel-heading">
+                        <p class="command"><span class="prompt">$</span> stack --production</p>
                     </div>
-                </div>
-            </section>
+                    <h2>Production experience</h2>
+                    <div class="stack-categories">
+                        <p><strong>Backend & automation</strong>Java · Python · Groovy · Bash · REST / SOAP</p>
+                        <p><strong>Platform & cloud</strong>Azure · Kubernetes · OpenShift · Helm · Terraform · Docker</p>
+                        <p><strong>Delivery & operations</strong>GitHub Actions · CI/CD · production support</p>
+                        <p><strong>Data & observability</strong>PostgreSQL · Grafana · Prometheus</p>
+                    </div>
+                </section>
+            </div>
 
             <div class="rule" aria-hidden="true"></div>
 
@@ -72,23 +75,6 @@
                         <h2>Software / VR-AR Engineer <span>@ University of Patras</span></h2>
                         <p>Built simulation, HoloLens AR, and REST integrations across EU research programs. Reached the IEEE VR 3DUI finals three consecutive years.</p>
                         <p class="tech-line">C# · Unity · HoloLens · REST APIs</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="panel" id="stack">
-                <div class="panel-heading">
-                    <p class="command"><span class="prompt">$</span> stack --production</p>
-                </div>
-                <div class="stack-grid production-stack">
-                    <article>
-                        <h2>Production experience</h2>
-                        <div class="stack-categories">
-                            <p><strong>Backend & automation</strong>Java · Python · Groovy · Bash · REST / SOAP</p>
-                            <p><strong>Platform & cloud</strong>Azure · Kubernetes · OpenShift · Helm · Terraform · Docker</p>
-                            <p><strong>Delivery & operations</strong>GitHub Actions · CI/CD · production support</p>
-                            <p><strong>Data & observability</strong>PostgreSQL · Grafana · Prometheus</p>
-                        </div>
                     </article>
                 </div>
             </section>
