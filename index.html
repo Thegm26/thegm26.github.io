@@ -8,88 +8,68 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="terminal" aria-label="GeorgesMichalakis portfolio">
-        <header class="terminal-bar">
-            <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span>georges@engineering: ~/portfolio</span>
-            <span class="bar-status">SYSTEM: ONLINE</span>
+    <main>
+        <header>
+            <a class="wordmark" href="#top">GM//</a>
+            <p>SOFTWARE ENGINEER · BACKEND · PLATFORM · CLOUD</p>
+            <a href="mailto:georgios.michalakis26@gmail.com">CONTACT ↗</a>
         </header>
 
-        <div class="terminal-body">
-            <p class="command"><span class="prompt">georges@engineering:~$</span> ./portfolio --overview</p>
+        <section class="intro" id="top">
+            <p class="kicker">01 / PROFILE</p>
+            <h1>Georges<br>Michalakis<span>.</span></h1>
+            <p class="statement">I build and operate dependable software systems—from backend services and integration workflows to cloud platforms and delivery automation.</p>
+            <p class="location">NICE, FRANCE <i>·</i> JAVA / PYTHON / CLOUD ENGINEERING</p>
+        </section>
 
-            <section class="hero" aria-labelledby="name">
-                <p class="eyebrow">[ SOFTWARE ENGINEER / BACKEND + PLATFORM ]</p>
-                <h1 id="name">GeorgesMichalakis<span class="cursor" aria-hidden="true">_</span></h1>
-                <p class="lead">I build and operate dependable software systems: backend services, cloud platforms, integration workflows, and delivery automation.</p>
-                <div class="hero-meta">
-                    <span>base: Nice, France</span>
-                    <span>focus: Java · systems design · cloud engineering</span>
-                    <span>languages: Greek / English / German / French</span>
-                </div>
-            </section>
+        <section class="block about">
+            <p class="kicker">02 / ABOUT</p>
+            <p>Software engineer with enterprise experience across platform engineering, CI/CD, software integration, cloud migration, and production operations. Currently deepening Java backend design, systems thinking, and performance engineering.</p>
+        </section>
 
-            <div class="rule" aria-hidden="true"></div>
+        <section class="block" id="experience">
+            <p class="kicker">03 / EXPERIENCE</p>
+            <div class="roles">
+                <article>
+                    <p class="date">2022 — PRESENT</p>
+                    <h2>Amadeus</h2>
+                    <p class="role">Software Engineer / DevOps</p>
+                    <p>Platform solutions, cloud migration, CI/CD automation, observability, infrastructure tooling, and secure configuration for enterprise airline systems.</p>
+                </article>
+                <article>
+                    <p class="date">2020 — 2022</p>
+                    <h2>Netcompany — INTRASOFT</h2>
+                    <p class="role">Software Integration Engineer</p>
+                    <p>Java integration, SOAP/REST services, Oracle Fusion Middleware, and production support for telecom systems.</p>
+                </article>
+                <article>
+                    <p class="date">2019 — 2022</p>
+                    <h2>University of Patras</h2>
+                    <p class="role">Software / VR-AR Engineer</p>
+                    <p>Research software for simulation, AR rendering, and REST integration across EU projects.</p>
+                </article>
+            </div>
+        </section>
 
-            <section class="panel" id="about">
-                <div class="panel-heading">
-                    <p class="command"><span class="prompt">$</span> cat about.txt</p>
-                    <span class="panel-index">01</span>
-                </div>
-                <p>Software engineer with enterprise experience in platform engineering, software integration, CI/CD, cloud migration, and production operations. I work across the line between application delivery and the infrastructure that keeps it reliable.</p>
-                <p>My current direction is Java-first backend and systems depth, supported by Python for automation and C++ for performance and low-level systems thinking.</p>
-            </section>
+        <section class="block stack">
+            <p class="kicker">04 / STACK</p>
+            <div>
+                <h2>Production</h2>
+                <p>Java · Python · Groovy · Bash · PostgreSQL · REST / SOAP · GitHub Actions · Terraform · Docker · Kubernetes · Helm · Azure · OpenShift · Grafana · Prometheus</p>
+            </div>
+            <div>
+                <h2>In progress</h2>
+                <p>Java backend design · testing · concurrency · distributed systems · operating systems · modern C++ · Python performance and async</p>
+            </div>
+        </section>
 
-            <section class="panel" id="experience">
-                <div class="panel-heading">
-                    <p class="command"><span class="prompt">$</span> ls -la experience/</p>
-                    <span class="panel-index">02</span>
-                </div>
-                <div class="experience-grid">
-                    <article>
-                        <p class="label">2022 — PRESENT</p>
-                        <h2>Software Engineer / DevOps <span>@ Amadeus</span></h2>
-                        <p>Platform solutions, CI/CD automation, infrastructure tooling, observability, secure cloud configuration, and Azure migration work for enterprise airline systems.</p>
-                    </article>
-                    <article>
-                        <p class="label">2020 — 2022</p>
-                        <h2>Software Integration Engineer <span>@ Netcompany — INTRASOFT</span></h2>
-                        <p>Java integration work, SOAP/REST services, Oracle Fusion Middleware, and production support for telecom systems.</p>
-                    </article>
-                    <article>
-                        <p class="label">2019 — 2022</p>
-                        <h2>Software / VR-AR Engineer <span>@ University of Patras</span></h2>
-                        <p>Research software for simulation, AR rendering, and REST integration across EU projects; IEEE VR 3DUI finalist, 2020–2022.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="panel" id="stack">
-                <div class="panel-heading">
-                    <p class="command"><span class="prompt">$</span> printenv ENGINEERING_STACK</p>
-                    <span class="panel-index">03</span>
-                </div>
-                <div class="stack-grid">
-                    <article>
-                        <h2>Production experience</h2>
-                        <p>Java · Python · Groovy · Bash · PostgreSQL · REST / SOAP · GitHub Actions · Terraform · Docker · Kubernetes · Helm · Azure · OpenShift · Grafana · Prometheus</p>
-                    </article>
-                    <article>
-                        <h2>Currently deepening</h2>
-                        <p>Java backend design · testing · concurrency · distributed systems · operating systems · modern C++ · Python performance and async</p>
-                    </article>
-                </div>
-            </section>
-
-            <footer>
-                <p><span class="prompt">$</span> contact --open</p>
-                <nav aria-label="Contact links">
-                    <a href="mailto:georgios.michalakis26@gmail.com">georgios.michalakis26@gmail.com</a>
-                    <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">github.com/Thegm26 ↗</a>
-                </nav>
-                <p class="footnote">Last updated: July 2026 · Built as a static site.</p>
-            </footer>
-        </div>
+        <footer>
+            <p>GEORGESMICHALAKIS / 2026</p>
+            <nav>
+                <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">GITHUB ↗</a>
+                <a href="mailto:georgios.michalakis26@gmail.com">EMAIL ↗</a>
+            </nav>
+        </footer>
     </main>
 </body>
 </html>
