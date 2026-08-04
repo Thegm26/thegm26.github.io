@@ -1,155 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="George Michalakis — backend, platform, and cloud engineer with 6+ years delivering enterprise software and production automation.">
-    <meta name="theme-color" content="#a8ff60">
-    <meta property="og:title" content="George Michalakis | Software Engineer">
-    <meta property="og:description" content="Backend, platform, and cloud engineering across enterprise airline, telecom, and research systems.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thegm26.github.io/">
-    <title>George Michalakis | Backend, Platform & Cloud Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="George Michalakis — software engineer working across graphics, integrations, cloud platforms, and DevOps."><meta name="theme-color" content="#d8ff4f">
+  <title>George Michalakis — Software Engineer</title><link rel="stylesheet" href="styles.css">
+  <style>
+    /* Each route gets its own tiny pixel worker; the centre stays free for the rover. */
+    .map-rover{position:absolute;z-index:0;top:43%;left:32%;width:26px;height:25px;border:3px solid var(--ink);background:var(--acid);box-shadow:4px 4px 0 var(--ink);pointer-events:none;animation:rover-route 12s steps(1,end) infinite}.map-rover::before{position:absolute;top:-10px;left:9px;width:3px;height:8px;background:var(--ink);box-shadow:0 -4px 0 var(--acid),0 -7px 0 var(--ink);content:""}.map-rover::after{position:absolute;bottom:-7px;left:2px;width:7px;height:5px;background:var(--ink);box-shadow:13px 0 0 var(--ink);content:""}.map-rover i{position:absolute;top:7px;left:5px;width:5px;height:5px;background:var(--ink);box-shadow:11px 0 0 var(--ink)}.map-rover b{position:absolute;bottom:4px;left:8px;width:8px;height:3px;background:var(--ink);font-size:0}
+    .node-pet{position:absolute;z-index:4;right:17px;bottom:calc(100% - 16px);display:block;width:31px;height:29px;border:3px solid var(--ink);background:var(--acid);box-shadow:3px 3px 0 var(--ink);pointer-events:none;transform-origin:bottom center}.node-pet::before{position:absolute;top:-10px;left:12px;width:3px;height:8px;background:var(--ink);box-shadow:0 -4px 0 var(--acid),0 -7px 0 var(--ink);content:""}.node-pet::after{position:absolute;bottom:-6px;left:3px;width:7px;height:4px;background:var(--ink);box-shadow:17px 0 0 var(--ink);content:""}.node-pet b{position:absolute;top:8px;left:6px;width:5px;height:5px;background:var(--ink);box-shadow:13px 0 0 var(--ink);font-size:0;letter-spacing:0}.node-pet b::after{position:absolute;top:11px;left:4px;width:8px;height:3px;background:var(--ink);box-shadow:0 3px 0 var(--paper);content:""}.node-pet strong{position:absolute;display:block;font-size:0}
+    .pet-projects{animation:pet-code 1.15s steps(2,end) infinite}.pet-projects strong{top:24px;left:-9px;width:42px;height:16px;border:3px solid var(--ink);background:var(--paper)}.pet-projects strong::before{position:absolute;top:3px;left:4px;width:24px;height:6px;background:var(--ink);box-shadow:4px 9px 0 -1px var(--ink);content:""}.pet-projects strong::after{position:absolute;right:-7px;bottom:-5px;width:12px;height:3px;background:var(--ink);content:""}
+    .pet-career{animation:pet-case 1.7s ease-in-out infinite}.pet-career strong{right:-14px;bottom:-5px;width:19px;height:13px;border:3px solid var(--ink);background:var(--paper)}.pet-career strong::before{position:absolute;top:-8px;left:4px;width:7px;height:6px;border:3px solid var(--ink);border-bottom:0;content:""}.pet-career strong::after{position:absolute;top:4px;left:7px;width:3px;height:3px;background:var(--acid);content:""}
+    .pet-cv{animation:pet-read 2s ease-in-out infinite}.pet-cv strong{right:-9px;bottom:-8px;width:15px;height:23px;border:3px solid var(--ink);background:var(--paper);transform:rotate(7deg)}.pet-cv strong::before{position:absolute;top:5px;left:3px;width:8px;height:2px;background:var(--ink);box-shadow:0 5px 0 var(--ink),0 10px 0 var(--ink);content:""}
+    .pet-github{animation:pet-panic .75s steps(2,end) infinite}.pet-github strong{right:-18px;bottom:-6px;width:18px;height:9px;border:3px solid var(--ink);background:var(--paper);box-shadow:-8px -7px 0 var(--paper),-8px -10px 0 0 var(--ink),-16px 0 0 var(--paper),-16px 3px 0 0 var(--ink)}.pet-github strong::before{position:absolute;top:-21px;right:-10px;color:var(--ink);font:900 17px/1 ui-monospace,SFMono-Regular,Menlo,monospace;content:"!"}
+    .route-map:has(.map-node:hover) .map-rover,.route-map:has(.map-node:focus-visible) .map-rover{opacity:0;animation-play-state:paused}@keyframes rover-route{0%,8%{top:43%;left:32%;transform:scaleX(1)}18%{top:43%;left:57%;transform:scaleX(1)}28%{top:52%;left:65%;transform:scaleX(1)}39%{top:65%;left:63%;transform:scaleX(-1)}54%{top:65%;left:37%;transform:scaleX(-1)}70%{top:52%;left:27%;transform:scaleX(-1)}84%,100%{top:43%;left:32%;transform:scaleX(1)}}@keyframes pet-code{50%{transform:translateY(2px)}}@keyframes pet-case{50%{transform:translateY(-4px) rotate(-4deg)}}@keyframes pet-read{50%{transform:translateY(-2px) rotate(3deg)}}@keyframes pet-panic{25%{transform:translateX(-2px)}75%{transform:translateX(2px)}}@media(max-width:760px){.node-pet{right:13px;transform:scale(.82);transform-origin:bottom right}.map-rover{animation-duration:14s}}@media(prefers-reduced-motion:reduce){.map-rover,.node-pet{animation:none!important}}
+  </style>
+  <style>
+    /* One foreground scout: it patrols the open area, then reacts to the route in focus. */
+    .deploy-bot.pixel-pet{z-index:5;top:50%;left:50%;animation:none;pointer-events:none;transform:translate(-50%,-42%)}.route-map:has(.map-node:hover) .deploy-bot.pixel-pet,.route-map:has(.map-node:focus-visible) .deploy-bot.pixel-pet{top:50%;left:50%;animation:none;transform:translate(-50%,-42%)}
+    @keyframes scout-patrol{0%,8%{top:42%;left:39%;transform:translate(-50%,-42%) scaleX(1)}18%{top:37%;left:57%;transform:translate(-50%,-42%) scaleX(1)}31%{top:52%;left:62%;transform:translate(-50%,-42%) scaleX(-1)}46%{top:65%;left:55%;transform:translate(-50%,-42%) scaleX(-1)}62%{top:64%;left:39%;transform:translate(-50%,-42%) scaleX(-1)}78%{top:52%;left:34%;transform:translate(-50%,-42%) scaleX(1)}90%,100%{top:42%;left:39%;transform:translate(-50%,-42%) scaleX(1)}}
+    @media(max-width:760px){.deploy-bot.pixel-pet{animation:scout-patrol-mobile 14s steps(1,end) infinite}.route-map:has(.map-node:hover) .deploy-bot.pixel-pet,.route-map:has(.map-node:focus-visible) .deploy-bot.pixel-pet{animation:pet-bob 2.4s ease-in-out infinite}}@keyframes scout-patrol-mobile{0%,10%{top:43%;left:32%;transform:translate(-50%,-50%) scale(.68)}28%{top:43%;left:68%;transform:translate(-50%,-50%) scale(.68)}48%{top:56%;left:67%;transform:translate(-50%,-50%) scale(.68) scaleX(-1)}68%{top:56%;left:32%;transform:translate(-50%,-50%) scale(.68) scaleX(-1)}88%,100%{top:43%;left:32%;transform:translate(-50%,-50%) scale(.68)}}
+    .pet-prop-github{width:46px!important;height:25px!important;top:97px!important;left:calc(50% - 23px)!important;background:var(--paper)!important;box-shadow:-13px 9px 0 var(--paper),13px 9px 0 var(--paper),-13px 9px 0 2px var(--ink),13px 9px 0 2px var(--ink)}.pet-prop-github::after{position:absolute;top:-22px;right:-26px;color:var(--ink);font:900 19px/1 ui-monospace,SFMono-Regular,Menlo,monospace;content:"+1";text-shadow:-34px 9px 0 var(--ink),-63px -2px 0 var(--ink)}.pet-prop-github span{right:3px!important;bottom:4px!important;width:12px!important;height:4px!important;background:var(--ink)!important;box-shadow:-10px -6px 0 var(--ink),-20px -12px 0 var(--ink),-30px -2px 0 var(--ink),-39px -17px 0 var(--ink),13px -15px 0 var(--ink),26px -5px 0 var(--ink)}
+    @media(prefers-reduced-motion:reduce){.deploy-bot.pixel-pet{animation:none!important;top:50%;left:50%;transform:translate(-50%,-42%)!important}}
+  </style>
+  <style>
+    /* Keep the route map calm: no patrol or hover animation, and no foreground props. */
+    .route-map .pixel-pet,.route-map .map-rover,.route-map .node-pet{animation:none!important}
+    .route-map .pixel-pet{top:2px!important;left:110px!important;transform:scale(.22)!important;transform-origin:top left}
+    .route-map .pet-antenna{display:none!important}
+    .route-map .pet-prop{display:none!important}
+    .route-map:has(.node-projects:hover,.node-projects:focus-visible) .pet-prop-projects,.route-map:has(.node-career:hover,.node-career:focus-visible) .pet-prop-career,.route-map:has(.node-cv:hover,.node-cv:focus-visible) .pet-prop-cv,.route-map:has(.node-github:hover,.node-github:focus-visible) .pet-prop-github{display:block!important}
+    .route-map:has(.node-github:hover,.node-github:focus-visible) .pet-prop-github{background:var(--acid)!important;box-shadow:-13px 9px 0 var(--acid),13px 9px 0 var(--acid)!important}
+    .route-map .pet-body,.route-map .pet-feet{background:var(--acid)!important}
+    .route-map .robot-return .pet-body{display:block;top:92px;left:43px;width:43px;height:27px;border:3px solid var(--ink);background:var(--acid)!important}
+    .route-map .robot-return .pet-body::before{top:6px;left:14px;width:8px;height:8px}
+    .route-map .robot-return .pet-arm{top:98px;width:12px;height:21px;border:3px solid var(--ink)}
+    .route-map .robot-return .pet-arm-left{left:25px}.route-map .robot-return .pet-arm-right{right:25px}
+    .route-map .robot-return .pet-feet{bottom:15px;left:40px;width:48px;height:9px;border-width:3px}
+    .route-map:has(.map-node:hover) .pixel-pet,.route-map:has(.map-node:focus-visible) .pixel-pet{top:2px!important;left:110px!important;animation:none!important;transform:scale(.22)!important;transform-origin:top left}
+    .route-map .pet-caption{display:none}
+    .map-node:hover,.map-node:focus-visible{transform:none}
+    @media(max-width:760px){.route-map .pixel-pet,.route-map:has(.map-node:hover) .pixel-pet,.route-map:has(.map-node:focus-visible) .pixel-pet{top:4px!important;left:99px!important;transform:scale(.19)!important;transform-origin:top left}}
+  </style>
 </head>
-<body>
-    <main class="terminal" aria-label="George Michalakis portfolio">
-        <header class="terminal-bar">
-            <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span class="terminal-title">george@engineering: ~/portfolio</span>
-            <nav class="top-links" aria-label="Contact links">
-                <a href="mailto:georgios.michalakis26@gmail.com"><span>Email</span> ↗</a>
-                <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer"><span>GitHub</span> ↗</a>
-                <a href="assets/GeorgeMichalakisCV.pdf?v=20260718-3" target="_blank" rel="noreferrer"><span>Open CV</span> ↗</a>
-            </nav>
-        </header>
-
-        <div class="terminal-body">
-            <div class="overview-grid">
-                <section class="hero" aria-labelledby="name">
-                    <p class="eyebrow">[ BACKEND / PLATFORM / CLOUD ENGINEER ]</p>
-                    <h1 id="name">George Michalakis</h1>
-                    <p class="lead">I build and operate enterprise software across backend services, cloud platforms, integration workflows, and production automation.</p>
-                    <p class="command-demo" aria-label="Examples of tools George uses"><span class="demo-prompt" aria-hidden="true">$</span> <span id="typing-command">mvn -q test -DskipITs=false</span><span class="demo-cursor" aria-hidden="true">▍</span></p>
-                    <div class="base-focus">
-                        <span>base: Nice, France 🇫🇷</span>
-                    </div>
-                </section>
-
-                <section class="stack-sidebar" id="stack">
-                    <div class="panel-heading">
-                        <p class="command"><span class="prompt">$</span> stack --production</p>
-                    </div>
-                    <h2>Production experience</h2>
-                    <div class="stack-categories">
-                        <p><strong>Backend & automation</strong>Java · Spring Boot · Quarkus · Python · Groovy · Bash</p>
-                        <p><strong>Platform & cloud</strong>Azure · Kubernetes / OpenShift · Helm · Terraform · Argo CD · Docker</p>
-                        <p><strong>Delivery & operations</strong>GitHub Actions · Jenkins · CI/CD · Grafana · Prometheus</p>
-                        <p><strong>Data & integration</strong>PostgreSQL · EDC · REST / SOAP</p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="rule" aria-hidden="true"></div>
-
-            <section class="panel" id="experience">
-                <div class="panel-heading">
-                    <p class="command"><span class="prompt">$</span> experience --impact</p>
-                </div>
-                <div class="experience-grid">
-                    <article>
-                        <p class="label">JUN 2022 — PRESENT</p>
-                        <h2>Software Engineer / DevOps Engineer <span>@ Amadeus</span></h2>
-                        <ul class="experience-points">
-                            <li>Build Spring Boot, Quarkus, and EDC services for airline data and secure data exchange.</li>
-                            <li>Own CI/CD and reliability across 100+ OpenShift namespaces.</li>
-                            <li>Automate platform work with Python and deliver Argo CD, Terraform, and Azure infrastructure.</li>
-                        </ul>
-                        <p class="tech-line">Java · Spring Boot · Quarkus · Python · OpenShift · Azure</p>
-                    </article>
-                    <article>
-                        <p class="label">APR 2020 — JUN 2022</p>
-                        <h2>Software Integration Engineer <span>@ Netcompany — INTRASOFT</span></h2>
-                        <ul class="experience-points">
-                            <li>Built telecom integrations for Vodafone and OTE on Oracle Fusion Middleware 12c.</li>
-                            <li>Delivered Java, OSB/SOA, SOAP/REST, message-transformation, and WebLogic solutions.</li>
-                            <li>Provided 24/7 SLA-driven support and contributed to zero-defect releases.</li>
-                        </ul>
-                        <p class="tech-line">Java · Oracle OSB/SOA · SOAP/REST · WebLogic · XML/XSLT</p>
-                    </article>
-                    <article>
-                        <p class="label">NOV 2019 — JUN 2022</p>
-                        <h2>Software Engineer <span>@ VVR — University of Patras</span></h2>
-                        <ul class="experience-points">
-                            <li>Built haptic vehicle simulation, HoloLens 2 AR, and REST integrations for EU research.</li>
-                            <li>Integrated SDKs, tracking, spatial mapping, and immersive interactions.</li>
-                            <li>Reached the IEEE VR 3DUI finals for three consecutive years.</li>
-                        </ul>
-                        <p class="tech-line">C# · Unity · VR · HoloLens 2 · REST APIs · Blender</p>
-                    </article>
-                </div>
-            </section>
-
-            <footer>
-                <p class="footnote">Last updated: <time datetime="2026-07-19">July 19, 2026</time></p>
-            </footer>
-        </div>
-    </main>
-    <script>
-        (() => {
-            const target = document.getElementById('typing-command');
-            if (!target || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-            const commands = [
-                'mvn -q test -DskipITs=false',
-                './mvnw verify -Dquarkus.profile=test',
-                'python -m pytest -q --cov',
-                'python tools/validate_charts.py --changed-only',
-                'groovy deploy.groovy --environment prod',
-                './scripts/release.sh --dry-run',
-                'cmake --build build --parallel',
-                "psql -c 'EXPLAIN ANALYZE SELECT ...'",
-                'docker build -t platform-api .',
-                'kubectl rollout status deployment/api',
-                'helm upgrade --install platform ./chart',
-                'argocd app diff fast-data',
-                'terraform apply',
-                'az keyvault secret show --vault-name core',
-                'oc rollout status deployment/api',
-                'gh workflow run deploy.yml --ref main',
-                'promtool check rules alerts.yml'
-            ];
-            let command = 0;
-            let characters = 0;
-            let deleting = false;
-
-            const update = () => {
-                const current = commands[command];
-                target.textContent = current.slice(0, characters);
-
-                if (!deleting && characters < current.length) {
-                    characters += 1;
-                    window.setTimeout(update, 58);
-                    return;
-                }
-                if (!deleting) {
-                    deleting = true;
-                    window.setTimeout(update, 2800);
-                    return;
-                }
-                if (characters > 0) {
-                    characters -= 1;
-                    window.setTimeout(update, 28);
-                    return;
-                }
-                deleting = false;
-                command = (command + 1) % commands.length;
-                window.setTimeout(update, 260);
-            };
-
-            target.textContent = '';
-            update();
-        })();
-    </script>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><a class="brand" href="index.html">GM<span>26</span></a><p>George Michalakis / Software Engineer</p><a class="header-link" href="mailto:georgios.michalakis26@gmail.com">Contact ↗</a></header>
+  <main id="main" class="home-main">
+    <p class="eyebrow"><img class="home-title-sticker" src="assets/sticker-laptop-cutout.png" alt="Pixel robot working at a laptop">Nice, France <span class="french-flag" aria-hidden="true"></span> · Remote-friendly</p>
+    <h1>I like working on things I’m proud of.</h1>
+    <p class="intro">I began in computer graphics and VR/AR research, moved into Java telecom integrations, and now work with cloud platforms and DevOps. I like making software better and feeling proud of what I put into people’s hands.</p>
+    <section class="route-map" aria-label="Portfolio destinations">
+      <a class="map-node node-projects" href="projects.html"><span>01</span><b>Projects</b><small>work & experiments</small><em>→</em><img class="route-preview" src="assets/route-projects.png" alt=""></a>
+      <a class="map-node node-career" href="experience.html"><span>02</span><b>Career</b><small>the full path</small><em>→</em><img class="route-preview" src="assets/route-career.png" alt=""></a>
+      <a class="map-node node-cv" href="assets/GeorgeMichalakisCV.pdf?v=20260718-3" target="_blank" rel="noreferrer"><span>03</span><b>CV</b><small>the full record</small><em>↗</em><img class="route-preview" src="assets/route-cv.png" alt=""></a>
+      <a class="map-node node-github" href="https://github.com/Thegm26" target="_blank" rel="noreferrer"><span>04</span><b>GitHub</b><small>code & repos</small><em>↗</em><img class="route-preview" src="assets/route-github.png" alt=""></a>
+    </section>
+  </main>
+  <footer><span>© 2026 George Michalakis</span></footer>
 </body>
 </html>
