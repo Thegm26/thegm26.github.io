@@ -1,0 +1,25 @@
+name: Sync DEV articles
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download published articles from DEV
+        run: curl --fail --silent --show-error 'https://dev.to/api/articles?username=thegm26&per_page=100' --output articles.json
+      - name: Commit changes when the feed has changed
+        run: |
+          if git diff --quiet -- articles.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add articles.json
+          git commit -m 'chore: sync DEV articles'
+          git push
