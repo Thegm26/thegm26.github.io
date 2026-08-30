@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download published articles from DEV
-        run: curl --fail --silent --show-error 'https://dev.to/api/articles?username=thegm26&per_page=100' --output articles.json
+        run: curl --fail --silent --show-error "https://dev.to/api/articles?username=thegm26&per_page=100&page=1&cache_bust=${GITHUB_RUN_ID}" --output articles.json
       - name: Commit changes when the feed has changed
         run: |
           if git diff --quiet -- articles.json; then exit 0; fi
