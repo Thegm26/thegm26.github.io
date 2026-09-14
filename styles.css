@@ -42,3 +42,13 @@
 .header-contact{display:flex;gap:18px;margin-left:auto;font-size:.72rem;font-weight:800}.header-contact a{text-decoration:none}.header-contact a:hover{text-decoration:underline;text-underline-offset:3px}@media(max-width:760px){.header-contact{gap:10px;font-size:.66rem}.header-contact a:first-child{font-size:0}.header-contact a:first-child::after{font-size:.66rem;content:"Email"}}
 .publication-page .publication-section{margin-top:clamp(50px,7vw,90px)}
 .home-secondary-links{display:flex;align-items:flex-start;flex-direction:column;gap:12px;margin-top:24px}.home-secondary-links .writing-link{margin-top:0}
+.linkedin-link{color:#0a66c2!important;text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:3px!important}
+
+/* Keep the home destination grid compact now that the centre hub is gone. */
+@media(min-width:901px){.home-main>.route-map{max-width:780px;height:360px;justify-self:center}.home-main .map-node{width:190px;min-height:98px}.home-main .node-projects,.home-main .node-career{top:43px}.home-main .node-projects,.home-main .node-cv{left:11%}.home-main .node-career,.home-main .node-github{right:11%}.home-main .node-cv,.home-main .node-github{bottom:34px}}
+@media(max-width:760px){.route-map{height:520px}.node-projects,.node-career{top:56px}.node-cv,.node-github{bottom:20px}}
+
+.home-main .node-projects .route-preview,.home-main .node-career .route-preview{width:105px;height:105px;top:-68px}
+.home-main .node-career .route-preview{width:82px;height:82px;top:-54px}
+@media(max-width:760px){.home-main .node-projects .route-preview,.home-main .node-career .route-preview{width:90px;height:90px;top:-58px}}
+@media(max-width:760px){.home-main .node-career .route-preview{width:70px;height:70px;top:-45px}}
