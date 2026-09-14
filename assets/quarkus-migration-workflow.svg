@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Spring to Quarkus migration workflow</title>
+  <desc id="desc">An AI-assisted, human-reviewed path carries a service from local Kind through development, staging, integration, and UAT validation.</desc>
+  <rect width="1200" height="675" fill="#111111"/>
+  <text x="60" y="78" fill="#d8ff4f" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="3">HUMAN-LED · AI-ASSISTED</text>
+  <text x="60" y="130" fill="#f0efe8" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">SPRING → QUARKUS</text>
+  <path d="M116 358H1080" fill="none" stroke="#d8ff4f" stroke-width="4" stroke-dasharray="13 11"/>
+  <path d="M1060 339l28 19-28 19" fill="none" stroke="#d8ff4f" stroke-width="4"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <g transform="translate(116 0)"><rect y="275" width="154" height="166" fill="#d8ff4f" stroke="#d8ff4f" stroke-width="3"/><text x="77" y="323" fill="#111" font-size="17" font-weight="800">01</text><text x="77" y="365" fill="#111" font-size="25" font-weight="800">KIND</text><text x="77" y="395" fill="#303028" font-size="15">local proof</text></g>
+    <g transform="translate(320 0)"><rect y="275" width="154" height="166" fill="#111" stroke="#d8ff4f" stroke-width="3"/><text x="77" y="323" fill="#d8ff4f" font-size="17" font-weight="800">02</text><text x="77" y="365" fill="#f0efe8" font-size="25" font-weight="800">DEV</text><text x="77" y="395" fill="#aaa9a3" font-size="15">CI gates</text></g>
+    <g transform="translate(524 0)"><rect y="275" width="154" height="166" fill="#111" stroke="#d8ff4f" stroke-width="3"/><text x="77" y="323" fill="#d8ff4f" font-size="17" font-weight="800">03</text><text x="77" y="365" fill="#f0efe8" font-size="22" font-weight="800">STAGING</text><text x="77" y="395" fill="#aaa9a3" font-size="15">deploy proof</text></g>
+    <g transform="translate(728 0)"><rect y="275" width="154" height="166" fill="#111" stroke="#d8ff4f" stroke-width="3"/><text x="77" y="323" fill="#d8ff4f" font-size="17" font-weight="800">04</text><text x="77" y="365" fill="#f0efe8" font-size="18" font-weight="800">INTEGRATION</text><text x="77" y="395" fill="#aaa9a3" font-size="15">system proof</text></g>
+    <g transform="translate(932 0)"><rect y="275" width="154" height="166" fill="#111" stroke="#d8ff4f" stroke-width="3"/><text x="77" y="323" fill="#d8ff4f" font-size="17" font-weight="800">05</text><text x="77" y="365" fill="#f0efe8" font-size="25" font-weight="800">UAT</text><text x="77" y="395" fill="#aaa9a3" font-size="15">accepted</text></g>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <rect x="60" y="512" width="328" height="73" fill="none" stroke="#77766f" stroke-width="2"/><text x="80" y="544" fill="#f0efe8" font-size="16">SERVICE REPO + CI</text><text x="80" y="567" fill="#aaa9a3" font-size="14">artifact and validation evidence</text>
+    <rect x="414" y="512" width="430" height="73" fill="none" stroke="#77766f" stroke-width="2"/><text x="434" y="544" fill="#f0efe8" font-size="16">PLATFORM CONFIG REPO + CI</text><text x="434" y="567" fill="#aaa9a3" font-size="14">environment context and promotion</text>
+    <rect x="870" y="512" width="270" height="73" fill="#d8ff4f"/><text x="890" y="544" fill="#111" font-size="16">9 SERVICES</text><text x="890" y="567" fill="#303028" font-size="14">migrated successfully</text>
+  </g>
+</svg>

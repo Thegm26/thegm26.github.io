@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A reusable AI migration harness for Spring-to-Quarkus delivery across many microservices."><meta name="theme-color" content="#d8ff4f">
+  <title>AI migration harness</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><a class="brand" href="index.html">GM<span>26</span></a><p>Case study</p><a class="header-link" href="amadeus-projects.html">Amadeus projects ←</a></header>
+  <main id="main" class="detail-page harness-page">
+    <div class="page-intro harness-intro">
+      <p class="eyebrow">Data Exchange Platform / case study</p>
+      <h1>I built the migration harness.</h1>
+      <p>A reusable framework that orchestrated Spring → Quarkus migration across many microservices.</p>
+    </div>
+
+    <section class="harness-map" aria-labelledby="harness-title">
+      <div class="harness-caption">
+        <div><p class="eyebrow">What I built</p><h2 id="harness-title">Reusable AI migration harness</h2></div>
+        <p>One governed workflow, applied service by service.</p>
+      </div>
+
+      <div class="harness-boundary">
+        <div class="harness-ownership" aria-label="Operating roles">
+          <div class="ownership-engine"><span>AI EXECUTION ENGINE</span><strong>Claude Sonnet 5</strong><small>Assisted conversion &amp; checks</small></div>
+          <div class="ownership-human"><span>HUMAN APPROVAL</span><strong>Developers</strong><small>Context, evidence &amp; approval</small></div>
+        </div>
+
+        <div class="harness-explorer">
+          <div class="harness-rail" role="tablist" aria-label="Migration harness stages" aria-orientation="horizontal">
+            <button class="harness-stage is-active" id="harness-tab-rules" type="button" role="tab" aria-selected="true" aria-controls="harness-panel-rules"><span>01</span><b>Encode rules</b></button>
+            <button class="harness-stage" id="harness-tab-convert" type="button" role="tab" aria-selected="false" aria-controls="harness-panel-convert" tabindex="-1"><span>02</span><b>Convert locally</b></button>
+            <button class="harness-stage" id="harness-tab-gate" type="button" role="tab" aria-selected="false" aria-controls="harness-panel-gate" tabindex="-1"><span>03</span><b>Validate &amp; gate</b></button>
+            <button class="harness-stage" id="harness-tab-coexist" type="button" role="tab" aria-selected="false" aria-controls="harness-panel-coexist" tabindex="-1"><span>04</span><b>Coexist</b></button>
+            <button class="harness-stage" id="harness-tab-cutover" type="button" role="tab" aria-selected="false" aria-controls="harness-panel-cutover" tabindex="-1"><span>05</span><b>Cut over</b></button>
+          </div>
+          <p class="harness-swipe"><span aria-hidden="true">↔</span> Swipe or use arrow keys to explore stages</p>
+          <div class="harness-panels">
+            <section class="harness-panel" id="harness-panel-rules" role="tabpanel" aria-labelledby="harness-tab-rules" tabindex="0"><p class="eyebrow">01 / Harness rulebook</p><h3>The harness encoded the migration path once.</h3><p>Rules, checks and environment gates made the workflow reusable.</p></section>
+            <section class="harness-panel" id="harness-panel-convert" role="tabpanel" aria-labelledby="harness-tab-convert" tabindex="0" hidden><p class="eyebrow">02 / AI-assisted execution</p><h3>Claude Sonnet 5 converted the service locally.</h3><p>The harness directed the work; developers supplied service context.</p></section>
+            <section class="harness-panel" id="harness-panel-gate" role="tabpanel" aria-labelledby="harness-tab-gate" tabindex="0" hidden><p class="eyebrow">03 / Evidence before promotion</p><h3>Checks ran before every environment gate.</h3><p>Developers reviewed the evidence and decided whether to advance.</p></section>
+            <section class="harness-panel" id="harness-panel-coexist" role="tabpanel" aria-labelledby="harness-tab-coexist" tabindex="0" hidden><p class="eyebrow">04 / Safe comparison</p><h3>Spring and Quarkus were validated together.</h3><p>The replacement was tested while the existing service remained available.</p></section>
+            <section class="harness-panel" id="harness-panel-cutover" role="tabpanel" aria-labelledby="harness-tab-cutover" tabindex="0" hidden><p class="eyebrow">05 / Approved change</p><h3>Humans approved the cutover and scale-down.</h3><p>Only the proven Quarkus service remained after approval.</p></section>
+          </div>
+        </div>
+        <p class="harness-boundary-label">Harness boundary — reusable execution pattern</p>
+      </div>
+    </section>
+
+  </main>
+  <footer><span>© 2026 George Michalakis</span><a href="experience.html#amadeus">Career context →</a></footer>
+  <script>
+    (() => {
+      const tabs = [...document.querySelectorAll('.harness-stage')];
+      const panels = [...document.querySelectorAll('.harness-panel')];
+      const selectStage = (tab, focus = false) => {
+        tabs.forEach((item) => {
+          const selected = item === tab;
+          item.classList.toggle('is-active', selected);
+          item.setAttribute('aria-selected', String(selected));
+          item.tabIndex = selected ? 0 : -1;
+        });
+        panels.forEach((panel) => { panel.hidden = panel.id !== tab.getAttribute('aria-controls'); });
+        if (focus) { tab.focus(); tab.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'auto' }); }
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => selectStage(tab));
+        tab.addEventListener('keydown', (event) => {
+          const next = { ArrowRight: (index + 1) % tabs.length, ArrowDown: (index + 1) % tabs.length, ArrowLeft: (index + tabs.length - 1) % tabs.length, ArrowUp: (index + tabs.length - 1) % tabs.length, Home: 0, End: tabs.length - 1 }[event.key];
+          if (next !== undefined) { event.preventDefault(); selectStage(tabs[next], true); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
