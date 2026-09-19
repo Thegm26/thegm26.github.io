@@ -13,6 +13,10 @@ const categories = {
     tags: ['architecture', 'adr', 'documentation', 'softwarearchitecture'],
     titlePattern: /\badr\b|architect/i,
   },
+  others: {
+    title: 'Other',
+    excludedCategories: ['kubernetes', 'architecture'],
+  },
 };
 
 function formatDate(value) {
@@ -26,6 +30,9 @@ function articleCard(article) {
 }
 
 function belongsToCategory(article, category) {
+  if (category.excludedCategories) {
+    return !category.excludedCategories.some((excludedCategory) => belongsToCategory(article, categories[excludedCategory]));
+  }
   const tags = (article.tag_list || []).map((tag) => tag.toLowerCase());
   return category.tags.some((tag) => tags.includes(tag)) || category.titlePattern.test(article.title || '');
 }
